@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+header{
+    
+    margin: 25px;
+    border-bottom: 1px solid rgb(100, 96, 92);
+}
+.click{
+    padding: 7px 15px;
+    background-color:#E02C6D;
+    border-radius: 15px;
+    
+}
+
+.container h2{
+    font-size: 24;
+    margin-left: 35px;
+}
+.nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item{
+   display: flex;
+   align-items: center; 
+}
+
+nav ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+}
+nav ul li{
+    margin-right: 35px;
+}
+nav ul li:hover{
+    background-color: burlywood;
+    padding: 7px;
+}
+.article-container{
+    display: flex;
+}
+.paragraph{
+    width: 50%;
+    margin: 0 35px;
+}
+.paragraph h1{
+    font-size: 52px;    
+}
+.paragraph p{
+    font-size: 26px;
+}
+
+.image{
+    height: 500px;
+    width: 550px;
+    margin-left: 35px;
+}
+.logos{
+    border-bottom: 1px solid dimgray;
+    display: flex;
+    justify-content: center;
+}
+.logos img{
+    margin-left: 25px;
+    
+}
+
+/* this is the Main part of this web page*/
+.main-part{
+    padding:80px 120px;    
+}
+.main-part h1{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.stars{
+    color: #FB8200;
+}
+.product-revew{
+    border: 1px solid darkgrey;
+    height: 535px;
+    width: 276px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px slategray;
+   
+}
+.product-revew p{
+    color:black;
+    margin-left: 5px;
+}
+.stars{
+    display: flex;
+    align-items: center;
+}
+img{
+    height: 300px;
+    width: 280px;
+}
+
