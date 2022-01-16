@@ -7,6 +7,7 @@ header{
     
     margin: 25px;
     border-bottom: 1px solid rgb(100, 96, 92);
+    padding: 10px;
 }
 .click{
     padding: 7px 15px;
@@ -45,6 +46,10 @@ nav ul li:hover{
 .article-container{
     display: flex;
 }
+.article-container .image:hover{
+    transform:scale(1.2);
+    transition: transform 2s;
+}
 .paragraph{
     width: 50%;
     margin: 0 35px;
@@ -54,6 +59,11 @@ nav ul li:hover{
 }
 .paragraph p{
     font-size: 26px;
+}
+.product-revew:hover{
+    transform: scale(1.1);
+    transition: transform 2s;
+
 }
 
 .image{
@@ -73,7 +83,7 @@ nav ul li:hover{
 
 /* this is the Main part of this web page*/
 .main-part{
-    padding:80px 150px;    
+    padding:80px 80px;   
 }
 .main-part h1{
     font-size: 28px;
@@ -116,22 +126,67 @@ nav ul li:hover{
    float: right;
    margin-top: 50px;
 }
-.course-detail{
-    margin-top: 150px;
+.courses{
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     display: flex;
-    border: 1px solid rgb(100, 96, 92);    
+    padding: 15px;
+   
 }
-.online-course img{
-    height:90px;
-    width: 150px;
+.course{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
 }
-.course-detail h3{
-    color: red;
+.courses img{
+    height: 250px;
+    width: 250px;
+    margin-right: 10px;
 }
+
 .footer{
     background-color: black;
     color: blanchedalmond;
     text-align: center;
     padding: 10px 15px;
 }
+@media screen and (max-width:480px) {
+    body{
+        width: 100%;
+    }
+    .main-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .courses{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .article-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-header{
+        display: flex;
+        flex-direction: column;
 
+    }
+    .nav-item{
+        display: flex;
+        flex-direction: column;
+    }
+    .logos{
+        display: flex;
+        flex-direction: column;
+        max-width: 150px;
+        max-height: 150px;
+        flex-wrap: nowrap;
+        justify-items: center;
+        align-items: center;
+    }
+}
