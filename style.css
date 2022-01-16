@@ -1,6 +1,5 @@
 body{
-    margin: 0;
-    padding: 0;
+    
     background-color: antiquewhite;
 }
 header{
@@ -12,8 +11,11 @@ header{
 .click{
     padding: 7px 15px;
     background-color:#E02C6D;
-    border-radius: 15px;
-    
+    border-radius: 15px;    
+}
+.container{
+    margin: 0;
+    padding: 0;
 }
 
 .container h2{
@@ -51,7 +53,7 @@ nav ul li:hover{
     transition: transform 2s;
 }
 .paragraph{
-    width: 50%;
+    width: 100%;
     margin: 0 35px;
 }
 .paragraph h1{
@@ -110,6 +112,9 @@ nav ul li:hover{
     display: flex;
     align-items: center;
 }
+.main-part{
+    align-items: center;
+}
 .main-part img{
     height: 300px;
     width: 280px;
@@ -143,6 +148,7 @@ nav ul li:hover{
     height: 250px;
     width: 250px;
     margin-right: 10px;
+    border-radius: 15px;
 }
 
 .footer{
@@ -154,6 +160,8 @@ nav ul li:hover{
 @media screen and (max-width:480px) {
     body{
         width: 100%;
+        margin: 0;
+        padding: 0;
     }
     .main-section{
         display: grid;
@@ -189,4 +197,22 @@ nav ul li:hover{
         justify-items: center;
         align-items: center;
     }
+}
+/* pad*/
+@media screen and (max-width:850px) {
+    body{
+        width:100%;
+    }
+    .main-section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    .Navigation{
+        margin-top: 100px;
+    }
+    .courses{
+        display: flex;
+        flex-direction: column;}
 }
